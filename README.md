@@ -1,5 +1,6 @@
 # code_20221023-obinnaede
 
+## Total number of persons overweight = 4;
 ## Available Scripts
 
 In the project directory, you can run:
@@ -16,20 +17,10 @@ Launches the test runner
 ### `npm run dev`
 Start the development environment
 
-
-Total number of persons overweight = 4;
-
 ### `npm start`
 Runs the compiled javascript file in dist folder
 
 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles app in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
 
