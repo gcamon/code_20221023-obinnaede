@@ -49,6 +49,7 @@ const bodyWeightCheck = (data) => {
         return patientsWeightInfo;
     }
     catch (err) {
+        console.log(err);
         return data;
     }
 };
