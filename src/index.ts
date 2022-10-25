@@ -1,7 +1,9 @@
 /*
-    Calculate the BMI (Body Mass Index), BMI Category and Health risk 
+    Calculate the BMI (Body Mass Index), BMI Category and Health risk
     for every persons and append the result.
-    @params array of objects. List of persons from request.
+    @params Array of objects. List of persons from request.
+    @return Array of Objects with added 3 fields in each object for BMI, BMI Category and Health rist
+
 */
 
 interface reqData {
@@ -24,9 +26,11 @@ interface bmiCal {
     (w: number, h: number): number
 }
 
-/* fn calculate the BMI value per person
+
+/* fn calculate the BMI value per patient
    @params w = weight , h = height
 */
+
 const calculateBMI: bmiCal = (w: number, h: number): number => Math.round((w/(h * h)) * 10) / 10
  
 
@@ -73,10 +77,6 @@ const bodyWeightCheck: bmiResult = (data: reqData[]): reqData[] => {
 
             return { BMI, BMICategory, HealthRisk, ...patient }
         })
-
-        /*
-            Total number of people overweight with default list of patients for testing = 4
-        */
 
         console.log(`Total number of people with overweight: ${overWeightCount}`)
 

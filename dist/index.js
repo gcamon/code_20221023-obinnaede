@@ -1,17 +1,10 @@
 "use strict";
 
-/* fn calculate the BMI value per patient
-   @params w = weight , h = height
-*/
+
 const calculateBMI = (w, h) => Math.round((w / (h * h)) * 10) / 10;
 
 
-/*
-    Calculate the BMI (Body Mass Index), BMI Category and Health risk
-    for every persons and append the result.
-    @params Array of objects. List of persons from request.
-    @return Array of Objects with added 3 fields in each object for BMI, BMI Category and Health rist
-*/
+
 const bodyWeightCheck = (data) => {
     try {
         let overWeightCount = 0;
@@ -47,7 +40,7 @@ const bodyWeightCheck = (data) => {
             return Object.assign({ BMI, BMICategory, HealthRisk }, patient);
         });
         /*
-            Total number of people overweight with default list of patients for testing = 4
+            Total number of people overweight with default list for testing = 4
         */
         console.log(`Total number of people with overweight: ${overWeightCount}`);
         return patientsWeightInfo;

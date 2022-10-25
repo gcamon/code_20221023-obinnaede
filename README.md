@@ -1,8 +1,10 @@
 Module Name
 # BMIStats
 
+    const BMIstats = require('BMIstats')
+    const result = BMIStats(listOfPersonsObjects)
+    console.log(result)
 ## Total number of persons overweight = 4;
-
 
 ## Available Scripts
 
